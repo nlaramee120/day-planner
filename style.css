@@ -1,7 +1,9 @@
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  padding-bottom: 200px;
 }
 
 textarea {
@@ -15,10 +17,13 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 15px solid black;
+}
+
+.container {
+  padding-top: 100px;
 }
 
 .description {
@@ -59,8 +64,6 @@ textarea {
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
 }
@@ -76,4 +79,5 @@ textarea {
 
 .col {
   border: 1px solid black;
+  font-weight: bold
 }
