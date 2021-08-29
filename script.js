@@ -19,7 +19,7 @@ function saveColumn(){
     var newTask = localStorage.getItem('9')
     
 
-    localStorage.setItem("9", newTask);
+    localStorage.setItem("9", newTask);n
 }
 // $(".saveBtn").on("click", function(){
 // var taskValue = $("#9").value();
