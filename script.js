@@ -12,19 +12,13 @@ function displayTime() {
     timeDisplayEl.text(rightNow);
 }
 
-
+storageInput.addEventListener('input', letter => 
+        text.textContent = letter.target.value
+)
 
 function saveColumn(){
-    console.log(middleBox1.textContent)
-    var newTask = localStorage.getItem('9')
-    
-
-    localStorage.setItem("9", newTask);n
+    localStorage.setItem('textinput', middleBox1.textContent)
 }
-// $(".saveBtn").on("click", function(){
-// var taskValue = $("#9").value();
-//     console.log(taskValue)
-// })
 
 saveBtn.addEventListener("click", saveColumn)
 
