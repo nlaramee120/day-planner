@@ -2,8 +2,7 @@ $(document).ready(function(){
 
 
 var timeDisplayEl = $('#display-time');
-var saveBtn = document.querySelector('.saveBtn')
-var middleBox1 = document.getElementById('9')
+
 
 
 function displayTime() {
@@ -11,19 +10,6 @@ function displayTime() {
     var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
     timeDisplayEl.text(rightNow);
 }
-
-storageInput.addEventListener('input', letter => 
-        text.textContent = letter.target.value
-)
-
-function saveColumn(){
-    localStorage.setItem('textinput', middleBox1.textContent)
-}
-
-saveBtn.addEventListener("click", saveColumn)
-
-
-
 
 function columnColor() {
     var getColor = new Date(). getHours();
@@ -102,11 +88,102 @@ function columnColor() {
 
 columnColor();
 
-
-
-
-
-
 setInterval(displayTime, 1000)
 
+$('#save1').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save2').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save3').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save4').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save5').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save6').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save7').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save8').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save9').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+$('#save10').click(function(event) {
+        event.preventDefault();
+        storeEntry();
+});
+
+var entry1 = $('#9');
+var entry2 = $('#10');
+var entry3 = $('#11');
+var entry4 = $('#12');
+var entry5 = $('#13');
+var entry6 = $('#14');
+var entry7 = $('#15');
+var entry8 = $('#16');
+var entry9 = $('#17');
+var entry10 = $('#18');
+
+        
+
+function storeEntry() {
+        localStorage.setItem("event1", entry1.text());
+        localStorage.setItem("event2", entry2.text());
+        localStorage.setItem("event3", entry3.text());
+        localStorage.setItem("event4", entry4.text());
+        localStorage.setItem("event5", entry5.text());
+        localStorage.setItem("event6", entry6.text());
+        localStorage.setItem("event7", entry7.text());
+        localStorage.setItem("event8", entry8.text());
+        localStorage.setItem("event9", entry9.text());
+        localStorage.setItem("event10", entry10.text());
+}
+
+var getEntry1 = localStorage.getItem("event1");
+var getEntry2 = localStorage.getItem("event2");
+var getEntry3 = localStorage.getItem("event3");
+var getEntry4 = localStorage.getItem("event4");
+var getEntry5 = localStorage.getItem("event5");
+var getEntry6 = localStorage.getItem("event6");
+var getEntry7 = localStorage.getItem("event7");
+var getEntry8 = localStorage.getItem("event8");
+var getEntry9 = localStorage.getItem("event9");
+var getEntry10 = localStorage.getItem("event10");
+
+
+var pullEvents = [getEntry1, getEntry2, getEntry3, getEntry4, getEntry5, getEntry6, getEntry7, getEntry8, getEntry9, getEntry10]
+
+for(i = 0; i < pullEvents.length; i++) {
+        entry1.text(getEntry1);
+        entry2.text(getEntry2);
+        entry3.text(getEntry3);
+        entry4.text(getEntry4);
+        entry5.text(getEntry5);
+        entry6.text(getEntry6);
+        entry7.text(getEntry7);
+        entry8.text(getEntry8);
+        entry9.text(getEntry9);
+        entry10.text(getEntry10);
+        
+}
+
 })
+
