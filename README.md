@@ -1,7 +1,15 @@
 Day Planner
 
+Nick Laramee (https://github.com/nlaramee120),
+
 Github link - https://github.com/nlaramee120/day-planner
 Github page URL - https://nlaramee120.github.io/day-planner/
+
+Technologies Used
+  HTML
+  CSS
+  Javascript
+  Moment.JS
 
 About the Project
 
